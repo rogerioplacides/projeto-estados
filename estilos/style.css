@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;  
+    --font2: 'Ysabeau SC', sans-serif;
+
+    --cor1: #FF0000;
+    --cor2: #FFD700;
+    --cor3: #00008B;
+    --cor4: #556B2F;
+    --cor5: #000000;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-image: linear-gradient(var(--cor3), var(--cor5));
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding: 30px;
+    font-size: 7vh;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    text-shadow: 3px 1px 0px var(--cor5);
+    font-weight: 800;
+}
+
+h1.estado{
+    color: var(--cor5);
+    font-family: var(--font2);
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4), transparent);
+    padding-left: 30px;
+    font-weight: 800;
+    
+}
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte1);
+    font-weight: 10vh;
+    font-size: 2vw;
+}
+
+section > p{
+    padding-bottom: 2.3em;
+    position: relative;
+}
+
+section.normal{
+    color: white;
+    background-color: black;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    position: relative;
+    
+}
+
+section blockquote{
+    position: absolute;
+    left: 62%;
+    top: 69%;
+    font-size: 0.8em;
+    font-family: var(--fonte1);
+}
+
+section blockquote.grande{
+    position: absolute;
+    left: 54%;
+    top: 69%;
+    font-size: 0.8em;
+    font-family: var(--fonte1);
+}
+
+section blockquote > a {
+    text-decoration: none;
+    color: white;
+}
+
+section blockquote > a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+section iframe{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 45%;
+    height: 70%;
+}
+
+section.imagem{
+    color: white;
+    background-color: rgb(77, 71, 71);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/são-paulo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+section#img02{
+    background-image: url(../imagens/rio-de-janeiro.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#img03{
+    background-image: url(../imagens/belo-horizonte.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#img04{
+    background-image: url(../imagens/salvador-bahia.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
